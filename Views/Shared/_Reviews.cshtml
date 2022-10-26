@@ -1,0 +1,43 @@
+@{
+    ViewData["Rating"] = "Home Page";
+}
+@model Review;
+
+
+<div class="container text-center px-2">
+    <h1 class="display-4"></h1>
+    <div class="mt-5">
+        <hr width="100%"/><br/>
+        <table class="card bg-light">
+            <thead>
+                <tr class="d-flex justify-content-around">
+                    <td class="w-33">Reviews</td>
+                </tr>
+            </thead>
+            @* @foreach(Review Review in ViewBag.Wed){ *@
+                @* bool Commented = Review.ReviewCommented.Any(g => g.ReviewId == Context.Session.GetInt32("UUID")); *@
+
+                @* <tr class="d-flex justify-content-around">
+                    <td class="w-25"><a asp-action="One" asp-controller="Reviews" asp-route-ReviewId="@Review.ReviewId">@Review.Rating</a></td>
+                    <td class="bg-secondary w-25">@Review.Description</td> *@
+                    @* Maybe include a date for the post???When the concert will occur? *@
+                    @* <td class="bg-secondary w-25">@Review.CreatedAt</td> *@
+                    @* <td class="w-25">@Review.ReviewCommented.Count()</td> *@
+
+
+                    @* @if(Context.Session.GetInt32("UUID") == Review.ReviewId){
+                        <td class="bg-secondary w-25"><a asp-action="DeleteReview" asp-controller="Reviews" asp-route-ReviewId="@Review.ReviewId">Delete</a></td>
+                    } *@
+                    @* <form asp-action="Comment" asp-controller="Reviews" asp-route-ReviewId="@Review.ReviewId" method="post">
+                        @if(Context.Session.GetInt32("UUID") != Review.ReviewId){
+                            @if(!Commented){
+                                <td class="bg-secondary w-25"><button type="submit" class="btn-link">Comment</button></td>
+                            }
+                        }
+                    </form> *@
+                @* </tr> *@
+            }
+        </table>
+
+    </div>
+</div>

@@ -1,0 +1,17 @@
+@model Post
+
+<form class="form-group d-flex justify-content-between m-5" asp-controller="Posts" asp-action="Create" method="post">
+    <div class="d-flex flex-column justify-content-between mx-2 ">
+    <h1 class="text-center"><em class="text-info">Create New Post</em></h1>
+    <hr>
+        <label asp-for="Subject" class="text-info"><em>Subject</em></label>
+        <input asp-for="Subject">
+        <span class="text-danger" asp-validation-for="Subject"></span>
+        <br>
+        <label asp-for="Message" class="text-info"><em>Message</em></label>
+        <input asp-for="Message">
+        <span class="text-danger" asp-validation-for="Message"></span>
+        <br>
+        <button class="btn btn-dark mt-3" type="submit">Submit Listing</button>
+    </div>
+</form>

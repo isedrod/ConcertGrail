@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Listing;
+
+
+<div class="container text-center px-2">
+    <h1 class="display-4"></h1>
+    <div class="mt-5">
+        <hr width="100%"/><br/>
+        <table class="card bg-light">
+            <thead>
+                <tr class="d-flex justify-content-around">
+                    <td class="w-33">Listings</td>
+                </tr>
+            </thead>
+            @* @foreach(Listing Listing in ViewBag.Wed){ *@
+                @* bool Commented = Listing.ListingCommented.Any(g => g.ListingId == Context.Session.GetInt32("UUID")); *@
+@*
+                <tr class="d-flex justify-content-around">
+                    <td class="w-25"><a asp-action="One" asp-controller="Listings" asp-route-ListingId="@Listing.ListingId">@Listing.Title</a></td>
+                    <td class="bg-secondary w-25">@Listing.Description</td>
+                    <td class="bg-secondary w-25">@Listing.Price</td> *@
+                    @* Maybe include a date for the post???When the concert will occur? *@
+                    @* <td class="bg-secondary w-25">@Listing.CreatedAt</td> *@
+                    @* <td class="w-25">@Listing.ListingCommented.Count()</td> *@
+
+
+                    @* @if(Context.Session.GetInt32("UUID") == Listing.ListingId){
+                        <td class="bg-secondary w-25"><a asp-action="DeleteListing" asp-controller="Listings" asp-route-ListingId="@Listing.ListingId">Delete</a></td>
+                    } *@
+                    @* <form asp-action="Comment" asp-controller="Listings" asp-route-ListingId="@Listing.ListingId" method="post">
+                        @if(Context.Session.GetInt32("UUID") != Listing.ListingId){
+                            @if(!Commented){
+                                <td class="bg-secondary w-25"><button type="submit" class="btn-link">Comment</button></td>
+                            }
+                        }
+                    </form> *@
+                </tr>
+            }
+        </table>
+
+    </div>
+</div>

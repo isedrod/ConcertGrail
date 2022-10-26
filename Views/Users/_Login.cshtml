@@ -1,0 +1,18 @@
+@* === Login Form === *@
+@model LoginUser
+
+<form class="form-group d-flex justify-content-center m-5" asp-action="Login" asp-controller="Users" method="post">
+    <div class="d-flex flex-column justify-content-between mb-3">
+    <h2 class="text-center"><em class="text-secondary">Login</em></h2>
+        <label asp-for="LoginEmail"></label>
+        <input asp-for="LoginEmail" class="form-control">
+        <span asp-validation-for="LoginEmail" class="text-danger"></span>
+        <br>
+        <label asp-for="LoginPassword"></label>
+        <input asp-for="LoginPassword" class="form-control">
+        <span asp-validation-for="LoginPassword" class="text-danger"></span>
+         <div class="mb-3 d-flex justify-content-end">
+        <button class="btn btn-dark mt-3" type="submit">Login</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,148 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-x0ia38q9wv] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-x0ia38q9wv] {
+  color: #0077cc;
+}
+
+.btn-primary[b-x0ia38q9wv] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-x0ia38q9wv], .nav-pills .show > .nav-link[b-x0ia38q9wv] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-x0ia38q9wv] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-x0ia38q9wv] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-x0ia38q9wv] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-x0ia38q9wv] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-x0ia38q9wv] {
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+.body[b-x0ia38q9wv] {
+  --accent-color: orangered;
+  --background-color: white;
+  --text-color: black;
+  --button-text-color: var(--background-color);
+  --transition-delay: 1s;
+
+  display: flex;
+  justify-content: right;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.body.dark[b-x0ia38q9wv]{
+  --accent-color: #D0D066;
+  --background-color: #333;
+  --text-color: white;
+  --button-text-color: #333;
+}
+/* The switch - the box around the slider */
+.switch[b-x0ia38q9wv] {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input[b-x0ia38q9wv] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider[b-x0ia38q9wv] {
+  margin-top: 3px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider[b-x0ia38q9wv]:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider[b-x0ia38q9wv] {
+  background-color: #131517;
+}
+
+input:focus + .slider[b-x0ia38q9wv] {
+  box-shadow: 0 0 1px #17191a;
+}
+
+input:checked + .slider[b-x0ia38q9wv]:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round[b-x0ia38q9wv] {
+  border-radius: 37px;
+}
+
+.slider.round[b-x0ia38q9wv]:before {
+  border-radius: 50%;
+}
+
+.darkmode[b-x0ia38q9wv] {
+  background-color: #292929;
+  color: white;
+}
+.darkmode .container[b-x0ia38q9wv] {
+  background-color: #3d3d3d;
+}
+.darkmode .body[b-x0ia38q9wv] {
+  background-color: #3d3d3d;
+}
+.form-check[b-x0ia38q9wv]{
+  cursor: pointer;
+}
+
+

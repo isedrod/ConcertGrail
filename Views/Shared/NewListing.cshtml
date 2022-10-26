@@ -1,0 +1,29 @@
+@model Listing
+
+<form class="form-group d-flex justify-content-between m-5" asp-controller="Listings" asp-action="Create" method="post">
+    <div class="d-flex flex-column justify-content-between mx-2 ">
+    <h1 class="text-center"><em class="text-info">Create New Listing</em></h1>
+    <hr>
+        <label asp-for="Title" class="text-info"><em>Title</em></label>
+        <input asp-for="Title">
+        <span asp-validation-for="Title" class="text-danger"></span>
+        <br>
+        <label asp-for="Description"class="text-info"><em>Description</em></label>
+        <input asp-for="Description">
+        <span asp-validation-for="Description" class="text-danger"></span>
+        <br>
+        <label asp-for="Price" class="text-info"><em>Price</em></label>
+        <input asp-for="Price">
+        @* <div>  
+      <label asp-for="PriceType"></label>
+      <span asp-validation-for="PriceType" class="text-danger font-weight-bold" >
+      </span>  
+      <select name="pricetype" id="pricetype">
+      <option value="dollars">Dollars</option>
+      <option value="=euros">Euros</option>
+      </select>
+    </div>   *@
+        <span asp-validation-for="Price" class="text-danger"></span>
+        <button class="btn btn-dark mt-3" type="submit">Submit Listing</button>
+    </div>
+</form>
